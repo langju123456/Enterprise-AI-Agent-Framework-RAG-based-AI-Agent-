@@ -12,7 +12,7 @@
 # COMMAND ----------
 
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import current_timestamp, trim, col, when
+from pyspark.sql.functions import current_timestamp, trim, col, lit
 from pyspark.sql.types import FloatType
 
 # Get parameters
