@@ -24,7 +24,7 @@ delta-spark==3.0.0
 
 # Vector Store and Embeddings
 chromadb==0.4.18
-faiss-cpu==1.7.4
+faiss-cpu==1.8.0
 
 # Utilities
 python-dotenv==1.0.0
