@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+langchain
+boto3
+pydantic
+python-dotenv
+requests
+streamlit
+databricks-sdk
