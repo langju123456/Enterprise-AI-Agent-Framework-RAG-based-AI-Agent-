@@ -1,0 +1,30 @@
+name: CI - Databricks Job Trigger
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  trigger-job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Trigger Databricks Notebook
+        uses: databricks/run-notebook@v0
+        with:
+          databricks-host: ${{ secrets.DATABRICKS_HOST }}
+          databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
+          local-notebook-path: databricks/notebooks/03_embeddings_vector_search.py
+          new-cluster-json: |
+            {
+              "spark_version": "14.3.x-scala2.12",
+              "node_type_id": "i3.xlarge",
+              "num_workers": 1
+            }
+          notebook-params-json: |
+            {
+              "SOURCE_TABLE": "silver.chunks",
+              "VECTOR_INDEX": "main.vector_index_docs",
+              "EMBEDDING_MODEL": "bedrock-embeddings"
+            }
