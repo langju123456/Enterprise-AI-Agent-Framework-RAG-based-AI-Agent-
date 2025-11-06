@@ -21,8 +21,8 @@ This guide provides instructions for deploying the Enterprise AI Agent Framework
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/langju123456/nterprise-AI-Agent-Framework-RAG-based-AI-Agent-.git
-   cd nterprise-AI-Agent-Framework-RAG-based-AI-Agent-
+   git clone https://github.com/langju123456/Enterprise-AI-Agent-Framework-RAG-based-AI-Agent-.git
+   cd Enterprise-AI-Agent-Framework-RAG-based-AI-Agent-
    ```
 
 2. **Create virtual environment**
@@ -119,7 +119,7 @@ docker run -d -p 8501:8501 --env-file .env rag-agent streamlit run streamlit_app
 3. **Deploy application**
    ```bash
    git clone your-repo-url
-   cd nterprise-AI-Agent-Framework-RAG-based-AI-Agent-
+   cd Enterprise-AI-Agent-Framework-RAG-based-AI-Agent-
    cp .env.example .env
    # Edit .env with credentials
    docker-compose up -d
@@ -343,5 +343,5 @@ docker-compose build --no-cache
 ## Support
 
 For issues and questions:
-- GitHub Issues: [Repository Issues](https://github.com/langju123456/nterprise-AI-Agent-Framework-RAG-based-AI-Agent-/issues)
+- GitHub Issues: [Repository Issues](https://github.com/langju123456/Enterprise-AI-Agent-Framework-RAG-based-AI-Agent-/issues)
 - Documentation: See README.md

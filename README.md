@@ -50,8 +50,8 @@ Built an enterprise-grade AI agent framework integrating FastAPI, LangChain, and
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/langju123456/nterprise-AI-Agent-Framework-RAG-based-AI-Agent-.git
-cd nterprise-AI-Agent-Framework-RAG-based-AI-Agent-
+git clone https://github.com/langju123456/Enterprise-AI-Agent-Framework-RAG-based-AI-Agent-.git
+cd Enterprise-AI-Agent-Framework-RAG-based-AI-Agent-
 ```
 
 2. Install dependencies:
